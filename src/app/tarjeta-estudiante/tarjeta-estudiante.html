@@ -1,0 +1,9 @@
+<article>
+  <h3>{{ estudiante().nombre }}</h3>
+  <p>{{ estudiante().nota }}</p>
+  @if (estudiante().nota >= 3.0) {
+    <p>✅ Aprobó</p>
+  } @else {
+    <p>❌ Reprobó</p>
+  }
+</article>

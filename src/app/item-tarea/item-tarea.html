@@ -1,0 +1,13 @@
+<article>
+  <h3>
+    @if (tarea().hecha) {
+      ✅
+    } @else {
+      ⬜
+    }
+    {{ tarea().titulo }}
+  </h3>
+  @if (!tarea().hecha) {
+    <button (click)="avisar()">Completar</button>
+  }
+</article>
