@@ -4,9 +4,12 @@ import { TarjetaProducto, Producto } from './tarjeta-producto/tarjeta-producto';
 import { TarjetaEstudiante } from './tarjeta-estudiante/tarjeta-estudiante';
 
 import { ItemTarea, Tarea } from './item-tarea/item-tarea';
+import { Agua } from './agua';
+import { BotonAgua } from './boton-agua/boton-agua';
+import { MarcadorAgua } from './marcador-agua/marcador-agua';
 
 @Component({
-  imports: [CurrencyPipe, TarjetaProducto, TarjetaEstudiante, ItemTarea],
+  imports: [CurrencyPipe, TarjetaProducto, TarjetaEstudiante, ItemTarea, BotonAgua, MarcadorAgua],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
