@@ -3,13 +3,23 @@ import { CurrencyPipe } from '@angular/common';
 import { TarjetaProducto, Producto } from './tarjeta-producto/tarjeta-producto';
 import { TarjetaEstudiante } from './tarjeta-estudiante/tarjeta-estudiante';
 
-import { ItemTarea, Tarea } from './item-tarea/item-tarea';
-import { Agua } from './agua';
+import { ItemTarea } from './item-tarea/item-tarea';
 import { BotonAgua } from './boton-agua/boton-agua';
 import { MarcadorAgua } from './marcador-agua/marcador-agua';
+import { ListaMercado } from './lista-mercado/lista-mercado';
+import { FormularioMercado } from './formulario-mercado/formulario-mercado';
 
 @Component({
-  imports: [CurrencyPipe, TarjetaProducto, TarjetaEstudiante, ItemTarea, BotonAgua, MarcadorAgua],
+  imports: [
+    CurrencyPipe,
+    TarjetaProducto,
+    TarjetaEstudiante,
+    ItemTarea,
+    BotonAgua,
+    MarcadorAgua,
+    ListaMercado,
+    FormularioMercado,
+  ],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
