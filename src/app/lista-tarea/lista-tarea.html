@@ -1,6 +1,11 @@
 <ul>
-  @for (tarea of tarea.lista(); track tarea) {
-    <li>{{ tarea }}</li>
+  @for (nombre of tarea.lista(); track nombre) {
+    <li>
+      <p>{{ nombre }}</p>
+      <button (click)="tarea.quitar(nombre)">X</button>
+    </li>
+  } @empty {
+    <li>🎉 No tienes tareas pendientes</li>
   }
 </ul>
 <p>Total de tareas: {{ tarea.total() }}</p>
