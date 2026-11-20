@@ -1,0 +1,6 @@
+<ul>
+  @for (tarea of tarea.lista(); track tarea) {
+    <li>{{ tarea }}</li>
+  }
+</ul>
+<p>Total de tareas: {{ tarea.total() }}</p>
