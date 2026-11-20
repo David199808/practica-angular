@@ -10,6 +10,9 @@ import { ListaMercado } from './lista-mercado/lista-mercado';
 import { FormularioMercado } from './formulario-mercado/formulario-mercado';
 import { FormularioTienda } from './formulario-tienda/formulario-tienda';
 import { ListaTienda } from './lista-tienda/lista-tienda';
+import { ContadorInvitados } from './contador-invitados/contador-invitados';
+import { ListaInvitados } from './lista-invitados/lista-invitados';
+import { FormularioInvitado } from './formulario-invitado/formulario-invitado';
 
 @Component({
   imports: [
@@ -23,6 +26,9 @@ import { ListaTienda } from './lista-tienda/lista-tienda';
     FormularioMercado,
     FormularioTienda,
     ListaTienda,
+    ListaInvitados,
+    ContadorInvitados,
+    FormularioInvitado,
   ],
   selector: 'app-root',
   styleUrl: './app.css',
