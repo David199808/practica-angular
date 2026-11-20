@@ -17,6 +17,7 @@ import { ContadorHelados } from './contador-helados/contador-helados';
 import { MenuHelados } from './menu-helados/menu-helados';
 import { FormularioTarea } from './formulario-tarea/formulario-tarea';
 import { ListaTarea } from './lista-tarea/lista-tarea';
+import { ListaPedidoHelados } from './lista-pedido-helados/lista-pedido-helados';
 
 @Component({
   imports: [
@@ -37,6 +38,7 @@ import { ListaTarea } from './lista-tarea/lista-tarea';
     MenuHelados,
     FormularioTarea,
     ListaTarea,
+    ListaPedidoHelados,
   ],
   selector: 'app-root',
   styleUrl: './app.css',

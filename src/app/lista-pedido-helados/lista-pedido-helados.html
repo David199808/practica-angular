@@ -1,0 +1,11 @@
+<h3>🧾 Tu pedido</h3>
+<ul>
+  @for (item of pedido.items(); track item.id + item.tamano) {
+    <li>
+      Helado {{ item.id }} - {{ item.tamano }} x {{ item.cantidad }}
+      <button (click)="pedido.restar(item.id, item.tamano)">-</button>
+    </li>
+  } @empty {
+    <li>An no has pedido helados</li>
+  }
+</ul>

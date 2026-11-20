@@ -20,4 +20,19 @@ export class Pedido {
       this.items.update((anterior) => [...anterior, { ...pedido, cantidad: 1 }]);
     }
   }
+
+  restar(id: number, tamano: string) {
+    // Buscar el item igual que en agregar.
+    const item = this.items().find((i) => i.id === id && i.tamano === tamano);
+    // Guardia: si no existe, me voy.
+    if (!item) return;
+    if (item.cantidad > 1) {
+      //tiene más de 1 → resto 1 y aviso al portero
+      item.cantidad -= 1;
+      this.items.set([...this.items()]);
+    } else {
+      // tiene 1 -> lo quito con filter (ya crea lista nueva)
+      this.items.update((anterior) => anterior.filter((i) => i !== item));
+    }
+  }
 }
