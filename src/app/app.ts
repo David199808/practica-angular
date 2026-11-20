@@ -13,6 +13,8 @@ import { ListaTienda } from './lista-tienda/lista-tienda';
 import { ContadorInvitados } from './contador-invitados/contador-invitados';
 import { ListaInvitados } from './lista-invitados/lista-invitados';
 import { FormularioInvitado } from './formulario-invitado/formulario-invitado';
+import { ContadorHelados } from './contador-helados/contador-helados';
+import { MenuHelados } from './menu-helados/menu-helados';
 
 @Component({
   imports: [
@@ -29,6 +31,8 @@ import { FormularioInvitado } from './formulario-invitado/formulario-invitado';
     ListaInvitados,
     ContadorInvitados,
     FormularioInvitado,
+    ContadorHelados,
+    MenuHelados,
   ],
   selector: 'app-root',
   styleUrl: './app.css',
@@ -56,6 +60,7 @@ export class App {
     { id: 2, titulo: 'Barrer', hecha: false },
     { id: 3, titulo: 'Limpiar', hecha: false },
   ];
+
   sumar() {
     this.contador++;
   }

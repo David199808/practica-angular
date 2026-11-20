@@ -1,0 +1,11 @@
+<section>
+  @for (helado of helados; track helado.id) {
+    <p>{{ helado.sabor }}</p>
+    <select #selectTamano>
+      <option>pequeño</option>
+      <option>mediano</option>
+      <option>grande</option>
+    </select>
+    <button (click)="pedido.agregar({ id: helado.id, tamano: selectTamano.value })">Agregar</button>
+  }
+</section>
